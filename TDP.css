@@ -1,0 +1,57 @@
+:root {}
+
+
+/*Must include a <main> with id="main-doc", which contains page's main content*/
+
+#main-doc {}
+
+
+/*Within id="main-doc" you must include <section> tags (minimum of 5) each with a class="main-section"*/
+
+.main-section {}
+
+
+/*The first element within each class="main-section" should be a <header> element*/
+
+
+/*Each <header> element within the class="main-section" should have an id of the same name with underscores instead of spaces*/
+
+
+/*---------------<header id="JaveScript_and_Java">JavaScript amd Java</header>---------------*/
+
+
+/*The class="main-section" elements should have at least 10 <p> elements combined*/
+
+
+/*The class="main-section" elements should have at least 5 <code> elements combined*/
+
+
+/*The class="main-section" elements should have at least 5 <li> elements combined*/
+
+
+/*Include a <nav> element with an id="navbar"*/
+
+#navbar {}
+
+
+/*-----navbar must contain one <header> element which contains text that describes the topic of the tech doc*
+
+/*-----navbar must contain <a> elements with class="nav-link" (should be one for every class="main-section")-----*/
+
+.nav-link {}
+
+
+/*The <header> element in the navbar must come before any <a> elements in the navbar*/
+
+
+/*Each class="nav-link" should contain text that corresponds to the header text within each <section> tag*/
+
+
+/*Each navbar element should navigate to a corresponding section of the main-doc element*/
+
+
+/*On regular sized devices the id="navbar" hsould be on the left side of the screen and should always be visible*
+
+/*Must include at least one media query*/
+
+@media (maxwidth: 800px) {}
