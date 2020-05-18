@@ -1,57 +1,171 @@
-:root {}
+:root {
+    color: black;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
 
+body {
+    display: block;
+}
 
-/*Must include a <main> with id="main-doc", which contains page's main content*/
+p {
+    margin-left: 40px;
+    color: rgba(90, 90, 90, 1);
+}
 
-#main-doc {}
+li {
+    margin-left: 50px;
+}
 
+.code-li {
+    margin-left: 20px;
+    color: rgba(100, 100, 100, 1);
+    list-style-position: outside;
+    list-style: none;
+}
 
-/*Within id="main-doc" you must include <section> tags (minimum of 5) each with a class="main-section"*/
+.code-no-li {
+    background: rgba(100, 100, 100, 0.1);
+    padding: 15px 20px 5px 0px;
+    margin-left: 39px;
+    border-radius: 6px;
+}
 
-.main-section {}
+#navbar {
+    position: fixed;
+}
 
+#navbar-header {
+    font-family: 'Playfair Display';
+    font-size: 3rem;
+    padding-left: 16px;
+    padding-top: 10px;
+}
 
-/*The first element within each class="main-section" should be a <header> element*/
+#navbar-ul {
+    list-style: none;
+    list-style-position: outside;
+    padding-left: 0px;
+}
 
+.navbar-li {
+    border-top: 0.5px solid black;
+    padding: 4px 20px 0px 20px;
+    margin-left: -8px;
+}
 
-/*Each <header> element within the class="main-section" should have an id of the same name with underscores instead of spaces*/
+.nav-link {
+    display: block;
+    margin: -4px -20px -1px -20px;
+    padding-left: 20px;
+    color: rgba(100, 100, 100, 1);
+    font-size: 1.1rem;
+    line-height: 4rem;
+    text-decoration: none;
+    padding-right: 20px;
+}
 
+.nav-link:hover {
+    background: rgba(150, 150, 150, 0.2);
+    ;
+    color: black;
+    cursor: pointer;
+}
 
-/*---------------<header id="JaveScript_and_Java">JavaScript amd Java</header>---------------*/
+#main-doc {
+    border-left: 2px solid black;
+    margin: -8px 0px -20px 260px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
 
+.main-section {
+    padding-left: 25px;
+}
 
-/*The class="main-section" elements should have at least 10 <p> elements combined*/
+header {
+    font-size: 2.4rem;
+}
 
+pre {
+    background: rgba(100, 100, 100, 0.1);
+    padding: 5px 20px 5px 5px;
+    border-radius: 6px;
+}
 
-/*The class="main-section" elements should have at least 5 <code> elements combined*/
+#Introduction {
+    background: none;
+}
 
+#The_first_step {
+    background: none;
+}
 
-/*The class="main-section" elements should have at least 5 <li> elements combined*/
+#HTML_5 {
+    background: none;
+}
 
+#Elements {
+    background: none;
+}
 
-/*Include a <nav> element with an id="navbar"*/
+#Attributes {
+    background: none;
+}
 
-#navbar {}
+#Data_Types {
+    background: none;
+}
 
+#Document_Type_Declaration {
+    background: none;
+}
 
-/*-----navbar must contain one <header> element which contains text that describes the topic of the tech doc*
+#Semantic_HTML {
+    background: none;
+}
 
-/*-----navbar must contain <a> elements with class="nav-link" (should be one for every class="main-section")-----*/
+#Delivery {
+    background: none;
+}
 
-.nav-link {}
+#Reference {
+    background: none;
+}
 
-
-/*The <header> element in the navbar must come before any <a> elements in the navbar*/
-
-
-/*Each class="nav-link" should contain text that corresponds to the header text within each <section> tag*/
-
-
-/*Each navbar element should navigate to a corresponding section of the main-doc element*/
-
-
-/*On regular sized devices the id="navbar" hsould be on the left side of the screen and should always be visible*
-
-/*Must include at least one media query*/
-
-@media (maxwidth: 800px) {}
+@media (max-width: 850px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar {
+        position: unset;
+    }
+    #navbar-header {
+        text-align: center;
+    }
+    #navbar-ul {
+        padding-left: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 2px solid rgba(100, 100, 100, 1);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 200px;
+    }
+    .navbar-li {
+        text-align: center;
+        border-top: none;
+        border-bottom: 0.5px solid black;
+        padding: 0px 0px 0px 0px;
+        margin-left: 0px;
+    }
+    .nav-link {
+        font-size: 1.4rem;
+    }
+    #main-doc {
+        border-left: none;
+        margin: 0px 0px 0px 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
